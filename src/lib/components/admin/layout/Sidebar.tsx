@@ -135,7 +135,7 @@ const allLayoutRoutes = [
   },
   {
     _id: "5",
-    icon: "uil:users-alt",
+    icon: "mingcute:user-2-line",
     title: "Users",
     subList: [
       {
