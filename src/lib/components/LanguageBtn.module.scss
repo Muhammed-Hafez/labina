@@ -1,0 +1,40 @@
+.lang__menu__container {
+  position: relative;
+
+  .lang__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lang__btn__ar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lang__menu {
+    display: none;
+    position: absolute;
+    z-index: 105;
+    background-color: white;
+    box-shadow: 0 0 5px #00000080;
+    li {
+      button {
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  &.open {
+    .lang__menu,
+    .overlay {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .lang__menu__container {
+    display: block;
+  }
+}

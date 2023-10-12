@@ -1,0 +1,24 @@
+.check__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--normal);
+  color: var(--font-light);
+  // padding: 1rem 1.2rem;
+  flex-shrink: 0;
+  width: 56px;
+  aspect-ratio: 1 / 1;
+  // width: 100%;
+  font-size: 1.3rem;
+  border-radius: 4px;
+
+  &.error {
+    background-color: var(--error);
+  }
+}
+
+.coupon__form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}

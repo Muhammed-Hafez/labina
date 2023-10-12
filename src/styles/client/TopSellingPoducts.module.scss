@@ -1,0 +1,113 @@
+.new__products {
+  margin-inline: auto;
+  padding-block: 1.5rem;
+  position: relative;
+
+  .new__container {
+    position: relative;
+    max-width: 1300px;
+    margin-inline: auto;
+
+    .filter {
+      flex: 1;
+      max-width: 300px;
+      padding: 1rem;
+      height: 100vh;
+
+      .filter__title {
+        margin-bottom: 1rem;
+      }
+
+      .filter__desc {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .products__gallery {
+      flex: 3;
+
+      .filter__header {
+        display: flex;
+        align-items: center;
+        padding-inline: 1rem;
+
+        .new__title {
+          width: 100%;
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+
+        .drawer__filter {
+          display: none;
+          z-index: 98;
+        }
+      }
+
+      .show__all {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-inline: auto;
+
+        span {
+          border: 1px solid var(--primary);
+          border-radius: 2rem;
+          padding: 0.3rem 1rem;
+          color: var(--primary);
+          transition: all 0.3s ease;
+          display: block;
+          width: 10rem;
+
+          &:hover {
+            background-color: var(--primary);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .drawer__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 99;
+    max-width: 300px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .new__container {
+    max-width: 1150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .new__container {
+    max-width: 950px;
+
+    .filter {
+      display: none;
+    }
+
+    .drawer__filter {
+      display: flex !important;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .new__container {
+    max-width: 760px;
+  }
+}

@@ -1,0 +1,39 @@
+.cards__container {
+  .cards__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .add__card__btn {
+    background-color: var(--primary);
+    color: var(--font-light);
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary);
+    display: block;
+    width: fit-content;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+
+  .no__cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    background-color: #fdf0d5;
+    padding: 0.5rem 1rem;
+
+    h4 {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.delete__icon {
+  color: red;
+  font-size: 1.7rem;
+}
+
+.address__book {
+  font-size: 0.9rem;
+  padding-block: 1rem;
+  padding-inline: 0.8rem;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  .address__text {
+    //   margin-bottom: 1.2rem;
+    p {
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+      color: var(--primary);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      span {
+        color: var(--font-dark);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .address__actions {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .edit__address {
+      a {
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        padding: 0.5rem 0.8rem;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+        // text-decoration: underline;
+
+        &:hover {
+          background-color: var(--primary);
+          color: var(--font-light);
+        }
+      }
+    }
+  }
+}

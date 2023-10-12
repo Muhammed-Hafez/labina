@@ -1,0 +1,50 @@
+.delete__icon {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.payment__card {
+  padding: 1rem 0.8rem;
+  border: 1px solid var(--font-dark);
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .card__number {
+    display: flex;
+    margin-bottom: 0.5rem;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    .card__number__title {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .card__numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-inline-start: 0.5rem;
+    }
+  }
+
+  .card__type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .card__type__title {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .card__name {
+      margin-inline-start: 0.5rem;
+    }
+  }
+}

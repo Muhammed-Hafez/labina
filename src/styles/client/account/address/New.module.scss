@@ -1,0 +1,33 @@
+.new__address {
+  .new__address__container {
+    .new__address__title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    .new__address__form {
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        button {
+          margin-top: 1.5rem;
+          background-color: var(--primary);
+          color: var(--font-light);
+          border: 1px solid var(--primary);
+          padding: 0.8rem 1rem;
+          border-radius: 2rem;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

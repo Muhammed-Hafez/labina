@@ -1,0 +1,16 @@
+.recipe__details {
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1.5;
+
+    li {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+  }
+}

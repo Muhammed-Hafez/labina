@@ -1,0 +1,26 @@
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  height: 300px;
+  text-align: center;
+
+  .go__home {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: var(--primary);
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--primary);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+}
