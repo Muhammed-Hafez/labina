@@ -40,7 +40,7 @@ function ProductCarousel({ productList }: { productList: IProductGet[] }) {
     <div className={styles["product__container"]}>
       <Splide
         options={{
-          direction: locale === "ar" ? "rtl" : "ltr",
+          // direction: locale === "ar" ? "rtl" : "ltr",
           arrows: false,
           rewind: true,
           type: "loop",

@@ -51,7 +51,7 @@ function ProductSlug(props: IProductSlugProps) {
   const { t } = useTranslation();
 
   const mainOptions = {
-    direction: locale === "ar" ? "rtl" : ("ltr" as any),
+    // direction: locale === "ar" ? "rtl" : ("ltr" as any),
     type: "loop",
     perPage: 1,
     perMove: 1,
@@ -77,7 +77,7 @@ function ProductSlug(props: IProductSlugProps) {
   };
 
   const thumbsOptions = {
-    direction: locale === "ar" ? "rtl" : ("ltr" as any),
+    // direction: locale === "ar" ? "rtl" : ("ltr" as any),
     type: "loop",
     rewind: true,
     gap: "1rem",

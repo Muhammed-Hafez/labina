@@ -149,7 +149,7 @@ function Header() {
                     <div className={styles["user__text"]}>
                       <Link href={"/account/info"}>
                         <Icon
-                          icon="mdi:user-circle-outline"
+                          icon="mingcute:user-2-line"
                           className={styles["header__main__iconify"]}
                         />
                         {/* {t(`Welcome`) + " "} */}
@@ -165,7 +165,7 @@ function Header() {
                       }}
                     >
                       <Icon
-                        icon="mdi:user-circle-outline"
+                        icon="mingcute:user-2-line"
                         className={styles["header__main__iconify"]}
                       />
                       <div className={styles["user__text"]}>
@@ -230,7 +230,7 @@ function Header() {
                       </div>
                     )}
                     <Icon
-                      icon="uil:cart"
+                      icon="mdi:cart-outline"
                       className={styles["header__main__iconify"]}
                     />
                   </Link>

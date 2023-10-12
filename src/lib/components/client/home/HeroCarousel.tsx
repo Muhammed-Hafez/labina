@@ -19,7 +19,7 @@ function HeroCarousel() {
     <section className={styles.hero__carousel}>
       <Splide
         options={{
-          direction: locale === "ar" ? "rtl" : "ltr",
+          // direction: locale === "ar" ? "rtl" : "ltr",
           arrows: false,
           rewind: true,
           type: "loop",

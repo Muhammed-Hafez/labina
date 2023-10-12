@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "./LanguageBtn.module.scss";
-import { Button, ButtonBase } from "@mui/material";
+import { Button } from "@mui/material";
 import { Icon } from "@iconify/react";
 
 function LanguageBtn() {
@@ -28,12 +28,9 @@ function LanguageBtn() {
           langMenuOpen ? styles["open"] : ""
         }`}
       >
-        <ButtonBase
-          className={styles["lang__btn"]}
-          onClick={handleLanguageMenu}
-        >
+        <button className={styles["lang__btn"]} onClick={handleLanguageMenu}>
           {locale}
-        </ButtonBase>
+        </button>
         <ul className={styles["lang__menu"]}>
           {locales.map(
             (lang) =>
@@ -53,53 +50,33 @@ function LanguageBtn() {
       </div>
     ) : locales.length === 2 ? (
       <div className={styles["lang__menu__container"]}>
-        {locale === locales[0] ? (
-          locales[1] === "ar" ? (
-            <Button
-              key={locales[1]}
-              className={`${styles["lang__btn"]} ${styles["lang__btn__ar"]}`}
-              onClick={() => handleChangeLanguage("ar")}
-            >
-              <Icon
-                icon="twemoji:flag-italy"
-                width="30"
-                className={styles.lang__btn__icon}
-              />
-            </Button>
-          ) : (
-            <Button
-              key={locales[1]}
-              className={styles["lang__btn"]}
-              onClick={() => handleChangeLanguage(locales[1])}
-            >
-              {locales[1]}
-            </Button>
-          )
-        ) : locales[0] === "ar" ? (
-          <Button
-            key={locales[0]}
-            className={`${styles["lang__btn"]} ${styles["lang__btn__ar"]}`}
-            onClick={() => handleChangeLanguage("ar")}
+        {locale === "en" ? (
+          <button
+            key="it"
+            className={styles["lang__btn"]}
+            onClick={() => handleChangeLanguage("it")}
           >
-            <Icon
+            {/* <Icon
               icon="twemoji:flag-italy"
               width="30"
               className={styles.lang__btn__icon}
-            />
-          </Button>
-        ) : (
-          <Button
-            key={locales[0]}
+            /> */}
+            IT
+          </button>
+        ) : locale === "it" ? (
+          <button
+            key="en"
             className={styles["lang__btn"]}
-            onClick={() => handleChangeLanguage(locales[0])}
+            onClick={() => handleChangeLanguage("en")}
           >
-            <Icon
+            {/* <Icon
               icon="emojione-v1:flag-for-united-kingdom"
               width="30"
               className={styles.lang__btn__icon}
-            />
-          </Button>
-        )}
+            /> */}
+            EN
+          </button>
+        ) : null}
       </div>
     ) : (
       <span></span>

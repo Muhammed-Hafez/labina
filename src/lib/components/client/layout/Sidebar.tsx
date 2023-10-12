@@ -85,7 +85,7 @@ function Sidebar({ drawerOpen, setDrawerOpen }: any) {
             <div className={styles["user__info__nav"]}>
               <Icon
                 className={styles["sidebar__iconify"]}
-                icon={"mdi:user-circle-outline"}
+                icon={"mingcute:user-2-line"}
               />
               <h2>
                 Welcome,{" "}
@@ -291,7 +291,7 @@ function Sidebar({ drawerOpen, setDrawerOpen }: any) {
                       >
                         <Icon
                           className={styles["sidebar__iconify"]}
-                          icon={"mdi:user-circle-outline"}
+                          icon={"mingcute:user-2-line"}
                         />
                         <span>{t("My Profile")}</span>
                       </Link>

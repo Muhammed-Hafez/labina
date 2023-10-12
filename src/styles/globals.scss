@@ -6,7 +6,7 @@
   --primary-dark: #000000;
   --primary-cont: #000000;
   // --primary: var(--primary);
-  --primary-off: #e45f00aa;
+  --primary-off: #000000;
   --primary-20: #e45f0033;
   --normal: #212121;
   --normal-off: #21212180;
@@ -32,9 +32,9 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-html[lang="ar"] {
-  direction: rtl;
-}
+// html[lang="ar"] {
+//   direction: rtl;
+// }
 
 body {
   font-family: "Cairo", sans-serif;

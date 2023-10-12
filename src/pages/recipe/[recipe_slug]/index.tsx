@@ -49,7 +49,7 @@ function ProductSlug(props: IRecipeSlugProps) {
   const { t } = useTranslation();
 
   const mainOptions = {
-    direction: locale === "ar" ? "rtl" : ("ltr" as any),
+    // direction: locale === "ar" ? "rtl" : ("ltr" as any),
     type: "loop",
     perPage: 1,
     perMove: 1,
@@ -58,7 +58,7 @@ function ProductSlug(props: IRecipeSlugProps) {
   };
 
   const thumbsOptions = {
-    direction: locale === "ar" ? "rtl" : ("ltr" as any),
+    // direction: locale === "ar" ? "rtl" : ("ltr" as any),
     type: "loop",
     rewind: true,
     gap: "1rem",

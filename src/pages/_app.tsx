@@ -57,14 +57,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={"/images/labina-logo.png"} />
       </Head>
-      <CacheProvider value={locale === "ar" ? cacheRtl : cacheLtr}>
-        <ThemeProvider theme={locale === "ar" ? rtlTheme : ltrTheme}>
-          {isAppLoading && <Loader />}
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </CacheProvider>
+      {/* <CacheProvider value={locale === "ar" ? cacheRtl : cacheLtr}>
+        <ThemeProvider theme={locale === "ar" ? rtlTheme : ltrTheme}> */}
+      {isAppLoading && <Loader />}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </ThemeProvider>
+      </CacheProvider> */}
 
       <Stack spacing={2} sx={{ width: "100%" }}>
         {notifyList.map((x) => (
