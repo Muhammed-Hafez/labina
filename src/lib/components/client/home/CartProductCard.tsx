@@ -111,7 +111,7 @@ const CartProductCard = () => {
                     defaultLocale
                   )}
                 </h3>
-                {/* <!-- <span className="product__price">{cartItem.product.mainPrice} {t("EGP")}</span> --> */}
+                {/* <!-- <span className="product__price">{cartItem.product.mainPrice} {t("€")}</span> --> */}
 
                 {/* <span className={styles["product__price"]}>
                   {(cartItem.product.promotionPrice ?? 0) > 0 && (
@@ -120,7 +120,7 @@ const CartProductCard = () => {
                         marginInlineEnd: "0.5rem",
                       }}
                     >
-                      {+(cartItem.product.mainPrice ?? 0).toFixed(2)} {t("EGP")}
+                      {+(cartItem.product.mainPrice ?? 0).toFixed(2)} {t("€")}
                     </del>
                   )}
                   {
@@ -129,7 +129,7 @@ const CartProductCard = () => {
                       (cartItem.product.promotionPrice ?? 0)
                     ).toFixed(2)
                   }{" "}
-                  {t("EGP")}
+                  {t("€")}
                 </span> */}
                 <button
                   className={styles["remove__product"]}
@@ -169,7 +169,7 @@ const CartProductCard = () => {
                       (cartItem.product.promotionPrice ?? 0)) *
                     cartItem.quantity
                   ).toFixed(2)}{" "}
-                  {t("EGP")}
+                  {t("€")}
                 </div>
               </div>
             </div>

@@ -88,7 +88,7 @@ function CheckoutSummary({
           <div className={styles["cart__summary__price"]}>
             <p>{t("Grand Total")}</p>
             <p>
-              {subTotal.toFixed(2)} {t("EGP")}
+              {subTotal.toFixed(2)} {t("€")}
             </p>
           </div>
 
@@ -103,14 +103,14 @@ function CheckoutSummary({
               >
                 <p>{t("Discount")}</p>
                 <p>
-                  - {discount.toFixed(2)} {t("EGP")}
+                  - {discount.toFixed(2)} {t("€")}
                 </p>
               </div>
 
               <div className={styles["cart__summary__price"]}>
                 <p>{t("Total after discount")}</p>
                 <p>
-                  {subTotalWithDiscount.toFixed(2)} {t("EGP")}
+                  {subTotalWithDiscount.toFixed(2)} {t("€")}
                 </p>
               </div>
             </>
@@ -120,7 +120,7 @@ function CheckoutSummary({
             <div className={styles["cart__summary__price"]}>
               <p>{t("Coupon Discount")}</p>
               <p>
-                - {couponActualValue.toFixed(2)} {t("EGP")}
+                - {couponActualValue.toFixed(2)} {t("€")}
               </p>
             </div>
           )}
@@ -128,7 +128,7 @@ function CheckoutSummary({
             <p>{t("Delivery Charges")}</p>
             {shippingValue !== undefined && (
               <p>
-                + {shippingValue.toFixed(2)} {t("EGP")}
+                + {shippingValue.toFixed(2)} {t("€")}
               </p>
             )}
           </div>
@@ -139,7 +139,7 @@ function CheckoutSummary({
             <div className={styles["cart__summary__total__price"]}>
               <p>{t("Net Total")}</p>
               <p>
-                {total.toFixed(2)} {t("EGP")}
+                {total.toFixed(2)} {t("€")}
               </p>
             </div>
           </div>

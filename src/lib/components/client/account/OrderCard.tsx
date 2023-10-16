@@ -57,7 +57,7 @@ function OrderCard({ order }: { order: IOrderGet }) {
         <p>
           {t("Total")}:{" "}
           <span>
-            {order.netTotal} {t("EGP")}
+            {order.netTotal} {t("€")}
           </span>
         </p>
       </div>

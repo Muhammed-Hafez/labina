@@ -303,24 +303,24 @@ function ViewOrderDetails() {
           }}
         >
           <p>
-            Sub total: {order.subTotal} {t("EGP")}
+            Sub total: {order.subTotal} {t("€")}
           </p>
           <p>
-            Shipping fee: {order.shippingPrice} {t("EGP")}
+            Shipping fee: {order.shippingPrice} {t("€")}
           </p>
           {order.promotionTotalValue > 0 && (
             <p>
-              promotions: -{order.promotionTotalValue} {t("EGP")}
+              promotions: -{order.promotionTotalValue} {t("€")}
             </p>
           )}
           {order.couponTotalValue > 0 && (
             <p>
-              coupon: -{order.couponTotalValue} {t("EGP")}
+              coupon: -{order.couponTotalValue} {t("€")}
             </p>
           )}
           <hr />
           <p>
-            Total: {order.netTotal} {t("EGP")}
+            Total: {order.netTotal} {t("€")}
           </p>
         </div>
 

@@ -7,26 +7,6 @@
     max-width: 1300px;
     margin-inline: auto;
 
-    .big__categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-      margin-bottom: 1rem;
-      width: 100%;
-      overflow: hidden;
-
-      > a {
-        border-radius: 0.5rem;
-        overflow: hidden;
-        max-height: 700px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-
     .small__categories {
       gap: 1rem;
       display: grid;
@@ -37,6 +17,7 @@
         border-radius: 0.5rem;
         overflow: hidden;
         max-height: 500px;
+        border: 1px solid #0000001f;
 
         img {
           width: 100%;

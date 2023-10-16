@@ -220,7 +220,7 @@ function ProductSlug(props: IProductSlugProps) {
               <span>
                 {(props.product?.promotionPrice ?? 0) > 0 && (
                   <del>
-                    {props.product?.mainPrice.toFixed(2)} {t("EGP")}
+                    {props.product?.mainPrice.toFixed(2)} {t("€")}
                   </del>
                 )}
                 <br />
@@ -228,7 +228,7 @@ function ProductSlug(props: IProductSlugProps) {
                   (props?.product?.mainPrice ?? 0) -
                   (props?.product?.promotionPrice ?? 0)
                 ).toFixed(2)}{" "}
-                {t("EGP")}
+                {t("€")}
               </span>
             </div>
 

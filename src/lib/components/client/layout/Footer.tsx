@@ -19,9 +19,6 @@ function Footer() {
               <Link href="/customer-service">{t("Customer Service")}</Link>
             </li>
             <li>
-              <Link href="/branch">{t("Our Branches")}</Link>
-            </li>
-            <li>
               <Link href="/contact-us">{t("Contact Us")}</Link>
             </li>
           </ul>

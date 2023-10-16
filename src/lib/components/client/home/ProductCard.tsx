@@ -64,14 +64,14 @@ function ProductCard({ productList }: { productList: IProductGet[] }) {
                         marginInlineEnd: "0.5rem",
                       }}
                     >
-                      {product.mainPrice.toFixed(2)} {t("EGP")}
+                      {product.mainPrice.toFixed(2)} {t("€")}
                     </del>
                   )}
                   <br />
                   {(product.mainPrice - (product.promotionPrice ?? 0)).toFixed(
                     2
                   )}{" "}
-                  {t("EGP")}
+                  {t("€")}
                 </span>
 
                 {product.isNewProduct ? (

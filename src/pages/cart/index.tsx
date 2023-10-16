@@ -99,7 +99,7 @@ function Cart() {
                   <div className={styles["cart__summary__price"]}>
                     <p>{t("Grand Total")}</p>
                     <p>
-                      {subTotal.toFixed(2)} {t("EGP")}
+                      {subTotal.toFixed(2)} {t("€")}
                     </p>
                   </div>
 
@@ -107,7 +107,7 @@ function Cart() {
                     <div className={styles["cart__summary__price"]}>
                       <p>{t("Discount")}</p>
                       <p>
-                        -{discount.toFixed(2)} {t("EGP")}
+                        -{discount.toFixed(2)} {t("€")}
                       </p>
                     </div>
                   )}
@@ -117,7 +117,7 @@ function Cart() {
                   <div className={styles["cart__summary__total__price"]}>
                     <p>{t("Net Total")}</p>
                     <p>
-                      {grandTotal.toFixed(2)} {t("EGP")}
+                      {grandTotal.toFixed(2)} {t("€")}
                     </p>
                   </div>
                 </div>

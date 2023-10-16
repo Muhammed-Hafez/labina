@@ -3,13 +3,12 @@ import { GetServerSideProps } from "next";
 import { httpClientSSR } from "@/lib/middleware/httpClient";
 import { IProductGet } from "@/lib/@types/Product";
 import HeroCarousel from "@/lib/components/client/home/HeroCarousel";
-import TestCategories from "@/lib/components/client/home/TestCategories";
+import Categories from "@/lib/components/client/home/Categories";
 import OfferSection from "@/lib/components/client/home/OfferSection";
 import FeaturedProducts from "@/lib/components/client/home/FeaturedProducts";
 import BrandSection from "@/lib/components/client/home/BrandSection";
 import NewProducts from "@/lib/components/client/home/NewProducts";
 import TopSellingProducts from "@/lib/components/client/home/TopSellingProducts";
-import Recipe from "@/lib/components/client/home/Recipe";
 import SecondaryCategories from "@/lib/components/client/home/SecondaryCategories";
 import ITranslate from "@/lib/@types/interfaces/ITranslate";
 import { IHomepageGet } from "@/lib/@types/Homepage";
@@ -75,7 +74,7 @@ export default function Home(props: IHomeProps) {
   return (
     <>
       {homepageSettings?.isHeroCarousel && <HeroCarousel />}
-      {homepageSettings?.isCategorySection && <TestCategories />}
+      {homepageSettings?.isCategorySection && <Categories />}
       {homepageSettings?.isNewProductSection &&
         props.newProductList &&
         props.newProductList.length > 0 && (
@@ -93,7 +92,7 @@ export default function Home(props: IHomeProps) {
         props.bestProductList.length > 0 && (
           <TopSellingProducts productList={props.bestProductList} />
         )}
-      {homepageSettings?.isRecipeSection && <Recipe />}
+      {/* {homepageSettings?.isRecipeSection && <Recipe />} */}
       {/* <PromotionsProducts />  */}
       {homepageSettings?.isAdvertisementSection && <SecondaryCategories />}
     </>

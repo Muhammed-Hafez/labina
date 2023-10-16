@@ -27,7 +27,7 @@ function AdminDashboard() {
           <img src="/images/labina-logo.png" alt="" />
         </div>
         <h2 className={styles.admin__title}>
-          {t(`Welcome to Labina's Dashboard!`)}
+          {t(`Welcome to Labina Dashboard!`)}
         </h2>
       </div>
     </div>

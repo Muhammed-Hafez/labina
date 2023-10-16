@@ -35,22 +35,6 @@ function SecondaryCategories() {
   return (
     <section className={styles["secondary"]}>
       <div className={styles["secondary__container"]}>
-        {/* <div className={styles["big__categories"]}>
-          {bigCategories.map((bigCat) => (
-            <Link href={"/product/"} key={bigCat._id}>
-              <img src={bigCat.imgUrl} alt="" />
-            </Link>
-          ))}
-        </div> */}
-
-        {/* <div className={styles["small__categories"]}>
-          {smallCategories.map((smallCat) => (
-            <Link href={"/product/"} key={smallCat._id}>
-              <img src={smallCat.imgUrl} alt="" />
-            </Link>
-          ))}
-        </div> */}
-
         <div className={styles["small__categories"]}>
           {homepageSettings?.advertisementSectionImageList.map((img) => (
             <div key={img}>

@@ -5,7 +5,7 @@
   --primary-light: #000000;
   --primary-dark: #000000;
   --primary-cont: #000000;
-  // --primary: var(--primary);
+  --secondary-color: #f4f4f4;
   --primary-off: #000000;
   --primary-20: #e45f0033;
   --normal: #212121;
@@ -390,6 +390,12 @@ input[type="number"] {
         font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 0.3rem;
+        text-overflow: ellipsis;
+        height: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
       }
 
       .product__desc {
