@@ -215,7 +215,7 @@ function Recipe() {
           </Splide>
         </div>
 
-        <Link href={"/recipe"} className={styles["show__all"]}>
+        <Link href={"/recipe"} className="show__all">
           <span>{t("Allrecipes")}</span>
         </Link>
       </div>

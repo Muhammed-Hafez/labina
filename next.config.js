@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://hajarafa.triangles-eg.com/api/:path*", // Proxy to Backend
+        destination: "https://labina.triangles-eg.com/api/:path*", // Proxy to Backend
         // destination: "http://localhost:8500/api/:path*", // Proxy to Backend
       },
     ];

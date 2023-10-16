@@ -75,7 +75,7 @@ function FeaturedProducts({ productList }: { productList: IProductGet[] }) {
 
         <ProductCarousel productList={filteredData} />
 
-        <Link href={"/featured-products"} className={styles["show__all"]}>
+        <Link href={"/featured-products"} className="show__all">
           <span>{t("Showall")}</span>
         </Link>
       </div>

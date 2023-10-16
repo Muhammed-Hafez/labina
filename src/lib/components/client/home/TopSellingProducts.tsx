@@ -15,7 +15,7 @@ function TopSellingProducts({ productList }: { productList: IProductGet[] }) {
 
         <ProductCarousel productList={productList} />
 
-        <Link href={"/top-selling/"} className={styles["show__all"]}>
+        <Link href={"/top-selling/"} className="show__all">
           <span>{t("Showall")}</span>
         </Link>
       </div>

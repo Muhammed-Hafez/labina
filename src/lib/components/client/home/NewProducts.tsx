@@ -15,7 +15,7 @@ function NewProducts({ productList }: { productList: IProductGet[] }) {
 
         <ProductCarousel productList={productList} />
 
-        <Link href={"/new-products/"} className={styles["show__all"]}>
+        <Link href={"/new-products/"} className="show__all">
           <span>{t("Showall")}</span>
         </Link>
       </div>
