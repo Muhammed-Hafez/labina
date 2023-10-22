@@ -13,7 +13,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
     gap: 1rem;
-    row-gap: 2rem;
     margin-inline: auto;
     max-width: 1300px;
 
@@ -60,11 +59,11 @@
   .categories__container {
     max-width: 760px;
 
-    .category__img {
-      height: auto;
+    .card__container {
+      height: 5rem !important;
 
-      img {
-        width: 4rem;
+      .category__img {
+        padding: 0.5rem !important;
       }
     }
   }

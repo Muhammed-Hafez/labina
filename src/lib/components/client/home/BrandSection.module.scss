@@ -28,20 +28,21 @@
 }
 
 @media (max-width: 1200px) {
-  .offer__section {
+  .brand__section {
     max-width: 1150px;
     height: auto;
   }
 }
 
 @media (max-width: 992px) {
-  .offer__section {
+  .brand__section {
     max-width: 980px;
+    height: 400px !important;
   }
 }
 
 @media (max-width: 768px) {
-  .offer__section {
+  .brand__section {
     max-width: 760px;
   }
 }
