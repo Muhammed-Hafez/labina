@@ -48,6 +48,9 @@
   },
   "devDependencies": {
     "@iconify/react": "^4.1.0",
+    "@types/connect-history-api-fallback": "^1.5.2",
+    "@types/serve-index": "^1.9.3",
+    "@types/sockjs": "^0.3.35",
     "@types/stylis": "^4.0.2"
   }
 }
