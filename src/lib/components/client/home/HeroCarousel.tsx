@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 import { useClientStore } from "@/lib/store/clientStore";
 
 const heroCarouselImages = [
-  "images/h-1.jpg",
-  "images/h-2.jpg",
-  "images/h-3.jpg",
+  "images/h1.jpeg",
+  "images/h2.webp",
+  "images/h3.webp",
 ];
 
 function HeroCarousel() {
@@ -19,7 +19,6 @@ function HeroCarousel() {
     <section className={styles.hero__carousel}>
       <Splide
         options={{
-          // direction: locale === "ar" ? "rtl" : "ltr",
           arrows: false,
           rewind: true,
           type: "loop",
@@ -29,13 +28,6 @@ function HeroCarousel() {
           pagination: false,
         }}
       >
-        {/* {homepageSettings?.heroCarouselImageList.map((img) => (
-        <SplideSlide key={img}>
-          <div className={styles["hero__img"]}>
-            <img src={"/api/static/images/homepage/" + img} alt={img} />
-          </div>
-        </SplideSlide>
-      ))} */}
         {heroCarouselImages.map((img) => (
           <SplideSlide key={img}>
             <div className={styles["hero__img"]}>
