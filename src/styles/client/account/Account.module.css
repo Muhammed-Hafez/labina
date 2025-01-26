@@ -1,0 +1,47 @@
+.account__container .account__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.account__container .contact__information {
+  padding: 1rem;
+}
+.account__container .contact__information .contact__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.account__container .contact__information .contact__text {
+  font-size: 1rem;
+  margin-block: 2rem;
+}
+.account__container .contact__information .contact__text .contact__name,
+.account__container .contact__information .contact__text .contact__email,
+.account__container .contact__information .contact__text .contact__phone {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary);
+  font-weight: 300;
+}
+.account__container .contact__information .contact__text .contact__name span,
+.account__container .contact__information .contact__text .contact__email span,
+.account__container .contact__information .contact__text .contact__phone span {
+  color: var(--font-dark);
+  font-weight: 500;
+  margin-inline-start: 0.5rem;
+}
+.account__container .contact__information .info__links {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+.account__container .contact__information .info__links a {
+  color: var(--primary);
+}
+.account__container .contact__information .info__links span {
+  color: #777;
+}/*# sourceMappingURL=Account.module.css.map */

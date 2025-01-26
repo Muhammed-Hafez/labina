@@ -61,23 +61,6 @@ function About(props: any) {
       <div id="home-right-bar-container" className="col-12 no-padding content">
         <div className="container-right row no-margin col-12 no-padding">
           <div className="cms-page-container p-2">
-            <p style={{ textAlign: "center" }}>
-              <iframe
-                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fhajarafaeg%2Fvideos%2F343868596643517%2F&show_text=false&width=560&t=0"
-                style={{
-                  marginTop: "1rem",
-                  border: "none",
-                  overflow: "hidden",
-                  width: "100%",
-                  maxWidth: "1080px",
-                  aspectRatio: "5/3",
-                }}
-                scrolling="no"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              />
-            </p>
-
             <p
               style={{
                 fontFamily: "Arial",

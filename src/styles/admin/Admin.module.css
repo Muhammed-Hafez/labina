@@ -1,0 +1,46 @@
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+.container .container__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.container .container__header .dashboard__logo {
+  width: 100%;
+  max-width: 300px;
+}
+.container .container__header .dashboard__logo img {
+  width: 100%;
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .container__header .admin__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container .container__header .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.container .data__grid {
+  overflow-x: auto;
+}
+
+@media (max-width: 576px) {
+  .container__header .admin__title {
+    font-size: 1.5rem !important;
+  }
+}/*# sourceMappingURL=Admin.module.css.map */

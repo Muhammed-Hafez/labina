@@ -1,0 +1,18 @@
+.container {
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+.container .container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .container__header .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.container .data__grid {
+  overflow-x: auto;
+}/*# sourceMappingURL=Bowse.module.css.map */

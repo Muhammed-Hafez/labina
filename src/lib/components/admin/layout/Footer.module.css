@@ -1,0 +1,10 @@
+.footer {
+  color: var(--font-light);
+  padding: 1rem 0;
+  background-color: var(--bg-dark);
+  text-align: center;
+}
+.footer a {
+  color: var(--font-light);
+  text-decoration: underline;
+}/*# sourceMappingURL=Footer.module.css.map */

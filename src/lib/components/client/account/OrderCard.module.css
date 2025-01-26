@@ -1,0 +1,40 @@
+.delete__icon {
+  color: red;
+  font-size: 1.7rem;
+}
+
+.order__book {
+  font-size: 0.9rem;
+  padding-block: 1rem;
+  padding-inline: 0.8rem;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.order__book .order__text p {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  color: var(--primary);
+}
+.order__book .order__text p span {
+  color: var(--font-dark);
+  font-weight: 500;
+}
+.order__book .order__actions {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order__book .order__actions .edit__order a {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+.order__book .order__actions .edit__order a:hover {
+  background-color: var(--primary);
+  color: var(--font-light);
+}/*# sourceMappingURL=OrderCard.module.css.map */

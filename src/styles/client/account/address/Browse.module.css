@@ -1,0 +1,34 @@
+.addresses__container .addresses__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.addresses__container .add__address__btn {
+  background-color: var(--primary);
+  color: var(--font-light);
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.addresses__container .add__address__btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.addresses__container .no__addresses {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background-color: #fdf0d5;
+  padding: 0.5rem 1rem;
+}
+.addresses__container .no__addresses h4 {
+  font-weight: 400;
+}/*# sourceMappingURL=Browse.module.css.map */

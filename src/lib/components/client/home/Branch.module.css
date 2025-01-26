@@ -1,0 +1,40 @@
+.branch__card {
+  border: 1px solid #c9c9c9;
+  padding: 1rem;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+}
+.branch__card h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.branch__card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.branch__card a {
+  color: var(--primary);
+  text-align: end;
+  transition: all 0.3s linear;
+}
+.branch__card a:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 576px) {
+  .branch__card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Branch.module.css.map */

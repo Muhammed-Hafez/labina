@@ -1,0 +1,44 @@
+.delete__icon {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.payment__card {
+  padding: 1rem 0.8rem;
+  border: 1px solid var(--font-dark);
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment__card .card__number {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.payment__card .card__number:nth-child(2) {
+  margin-bottom: 0;
+}
+.payment__card .card__number .card__number__title {
+  color: var(--primary);
+  font-weight: 500;
+}
+.payment__card .card__number .card__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-inline-start: 0.5rem;
+}
+.payment__card .card__type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.payment__card .card__type .card__type__title {
+  color: var(--primary);
+  font-weight: 500;
+}
+.payment__card .card__type .card__name {
+  margin-inline-start: 0.5rem;
+}/*# sourceMappingURL=PaymentCard.module.css.map */

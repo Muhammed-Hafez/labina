@@ -1,0 +1,293 @@
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.icons .search__icon {
+  display: none;
+}
+
+.icon__btn {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+}
+.icon__btn .header__main__iconify {
+  width: 2rem;
+  height: 2rem;
+}
+
+.search__icon {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0.6rem;
+  overflow: hidden !important;
+  position: relative;
+  display: inline-block;
+}
+.search__icon .header__main__iconify {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-light);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2509803922);
+}
+.header .header__container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding: 0.5rem 0.8rem;
+}
+.header .header__container .main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .header__container .main__header .left__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .header__container .main__header .left__content .menu__icon {
+  display: none;
+}
+.header .header__container .main__header .left__content .logo {
+  height: 6rem;
+}
+.header .header__container .main__header .left__content .logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 1/1;
+}
+.header .header__container .main__header .center__content .logo__mobile {
+  display: none;
+}
+.header .header__container .main__header .center__content .logo {
+  height: 4rem;
+  overflow: hidden;
+}
+.header .header__container .main__header .center__content .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.header .header__container .main__header .center__content .header__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.header .header__container .main__header .center__content .header__links .header__item .header__link {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.header .header__container .main__header .center__content .header__links .header__item:hover .header__link {
+  color: var(--primary);
+}
+.header .header__container .main__header .right__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header .header__container .main__header .right__content .search__input {
+  display: flex;
+  border-radius: 100px;
+  margin-inline: 1rem;
+  width: 100%;
+}
+.header .header__container .main__header .right__content .search__input input {
+  padding-inline: 1rem;
+  border-width: 0;
+  outline-width: 0;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+.header .header__container .main__header .right__content .search__input input::-webkit-search-cancel-button {
+  filter: grayscale(1);
+  font-size: 22px;
+  cursor: pointer;
+}
+.header .header__container .main__header .right__content .search__input input:focus {
+  color: var(--primary);
+  border: 1px solid #000;
+}
+.header .header__container .main__header .right__content .search__input button {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 100px;
+  border-end-start-radius: 0;
+  border-start-start-radius: 0;
+  transition: filter 0.15s;
+  padding: 0.5rem;
+}
+.header .header__container .main__header .right__content .search__input button:active {
+  filter: brightness(0.85);
+}
+.header .header__container .main__header .right__content .search__input button svg {
+  font-size: 1.5rem;
+}
+.header .header__container .main__header .right__content .nav__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.header .header__container .main__header .right__content .nav__icons .icons .search__container .input__search {
+  display: none;
+}
+.header .header__container .main__header .right__content .nav__icons .icons .cart__btn {
+  padding-top: 1rem;
+}
+.header .header__container .main__header .right__content .nav__icons .icons .cart__btn .cart__badge {
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  width: 24px;
+  color: white;
+  right: auto;
+  left: -0.5rem;
+  top: 0;
+  translate: 0 0;
+}
+.header .header__container .main__header .right__content .nav__icons .user__account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header .header__container .main__header .right__content .nav__icons .user__account .user__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.header .header__container .main__header .right__content .nav__icons .user__account .user__text > a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .header .header__container {
+    max-width: 1150px;
+  }
+}
+@media (max-width: 992px) {
+  .header .header__container {
+    max-width: 985px;
+  }
+  .header .header__container .main__header .left__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header .header__container .main__header .left__content .menu__icon {
+    display: block;
+  }
+  .header .header__container .main__header .left__content .logo {
+    display: none;
+  }
+  .header .header__container .main__header .left__content .left__container {
+    display: flex;
+    align-items: center;
+  }
+  .header .header__container .main__header .center__content {
+    display: block;
+    flex-shrink: 0;
+    height: 50px;
+    width: 100px;
+  }
+  .header .header__container .main__header .center__content .logo__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .header .header__container .main__header .center__content .logo__mobile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .header .header__container .main__header .center__content .header__links {
+    display: none;
+  }
+  .header .header__container .main__header .right__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .header__container .main__header .right__content .search__input {
+    display: none;
+  }
+  .header .header__container .main__header .right__content .nav__icons .user__account {
+    display: none;
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons .search__container {
+    position: relative;
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons .search__container .search__icon {
+    display: block;
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons .search__container .input__search {
+    position: absolute;
+    right: -5vw;
+    width: 80vw;
+    background-color: var(--bg-light);
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons .search__container .input__search.active {
+    display: block;
+  }
+  .header .header__container .main__header .right__content .nav__icons .icons .search__container .input__search .input__filed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header .header__container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .header .header__container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

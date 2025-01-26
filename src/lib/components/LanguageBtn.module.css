@@ -1,0 +1,32 @@
+.lang__menu__container {
+  position: relative;
+}
+.lang__menu__container .lang__btn {
+  padding: 0.3rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+.lang__menu__container .lang__menu {
+  display: none;
+  position: absolute;
+  z-index: 105;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5019607843);
+}
+.lang__menu__container .lang__menu li button {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.lang__menu__container.open .lang__menu,
+.lang__menu__container.open .overlay {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .lang__menu__container {
+    display: block;
+  }
+}/*# sourceMappingURL=LanguageBtn.module.css.map */

@@ -1,0 +1,18 @@
+.app__container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.app__container .app {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.app__container .app .app__body {
+  overflow-x: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=AdminLayout.module.css.map */
